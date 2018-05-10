@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Login Incubadora</title>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="/images/icons/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title"
+					style="background-image: url(/images/bg-01.jpg);">
+					<span class="login100-form-title-1"> <img
+						src="/images/logo.png" />
+					</span>
+				</div>
+
+				<br />
+				<div align="center">
+					<h3 style="color: red">
+						Opa, que pena <strong th:text="${loggedUsername}"></strong>, porém você não tem acesso a essa página!
+					</h3>
+				</div>
+				<hr />
+				<div align="center">
+					<a class="login100-form-btn" href="/auth/hello"> 
+						Voltar
+					</a>
+				</div>
+				<br />
+			</div>
+		</div>
+	</div>
+
+	<script src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/js/main.js"></script>
+
+</body>
+</html>
